@@ -1,0 +1,46 @@
+#header {
+    background-color: rgb(228, 228, 228);
+    font-family: 'Young Serif', serif;
+}
+
+#date {
+    color: black;
+}
+
+#header .btn {
+    border: 0px !important;
+    padding: .5rem 3rem;
+}
+
+span {
+    color: #e63946;
+}
+
+.card {
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #1d3557 !important;
+}
+
+.card-footer {
+    border-top: 2px solid #1d3557 !important;
+    background-color: #f1faee !important;
+    color: red !important;
+}
+
+.card-body .text-body-secondary {
+    color: #457b9d !important;
+}
+
+.card-footer small {
+    color: #457b9d !important;
+}
+
+.btn {
+    border: 2px solid #1d3557 !important;
+    color: #1d3557 !important;
+}
+
+.btn:hover {
+    background-color: #1d3557 !important;
+    color: white !important;
+}

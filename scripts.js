@@ -1,10 +1,11 @@
-const apiKey = process.env.NEWS_API_KEY;
+const apiKey = '6ecb39f321684ac7ae8e58c89345a7e2';
 let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
 const newsDiv = document.querySelector('#news');
 const headlinesBtn = document.querySelector('#headlines');
 const techBtn = document.querySelector('#tech');
 const entBtn = document.querySelector('#ent');
 const foodBtn = document.querySelector('#food');
+const sportsBtn = document.querySelector('#sports');
 
 headlinesBtn.addEventListener('click', () => {
     url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
@@ -26,6 +27,12 @@ entBtn.addEventListener('click', () => {
 
 foodBtn.addEventListener('click', () => {
     url = `https://newsapi.org/v2/everything?q=food&apiKey=${apiKey}`;
+    removeArticles();
+    fetchNews();
+});
+
+sportsBtn.addEventListener('click', () => {
+    url = `https://newsapi.org/v2/everything?q=sports&apiKey=${apiKey}`;
     removeArticles();
     fetchNews();
 });
